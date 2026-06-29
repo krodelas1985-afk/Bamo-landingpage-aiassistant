@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 import { CTAButton } from "./CTAButton";
 
 const NAV = [
-  { label: "What BaMo does", href: "#what-bamo-does" },
+  { label: "What's included", href: "#whats-included" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Why BaMo", href: "#why-bamo" },
 ];
@@ -34,7 +34,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <CTAButton href="#apply" className="px-5">
-            Reserve your spot
+            Become a Founding Client
           </CTAButton>
         </div>
 
@@ -75,7 +75,7 @@ export function Header() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Reserve your spot
+              Become a Founding Client
             </CTAButton>
           </nav>
         </div>

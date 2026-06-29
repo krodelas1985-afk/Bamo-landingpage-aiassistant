@@ -1,10 +1,10 @@
 import { Logo } from "./Logo";
 
 const NAV = [
-  { label: "What BaMo does", href: "#what-bamo-does" },
+  { label: "What's included", href: "#whats-included" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Why BaMo", href: "#why-bamo" },
-  { label: "Reserve your spot", href: "#apply" },
+  { label: "Become a Founding Client", href: "#apply" },
 ];
 
 export function Footer() {
@@ -16,7 +16,11 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-3 font-body text-sm leading-relaxed text-ink-body">
-              Real estate marketing and follow-up, handled.
+              Helping Philippine real estate professionals grow with AI.
+            </p>
+            <p className="mt-3 font-heading text-sm font-semibold text-navy">
+              Para sa bawat Ahenteng Pilipino.{" "}
+              <span className="text-orange">Because we deserve better.</span>
             </p>
           </div>
 

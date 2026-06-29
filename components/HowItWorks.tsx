@@ -4,17 +4,17 @@ const STEPS = [
   {
     n: "1",
     title: "You onboard",
-    body: "A short setup call. Connect your pages, listings, and lead sources.",
+    body: "A short setup call. We connect your pages, listings, and lead sources.",
   },
   {
     n: "2",
-    title: "BaMo runs it 24/7",
-    body: "We run your marketing and handle every lead around the clock.",
+    title: "BaMo runs your growth 24/7",
+    body: "Website, ads, content, instant replies, follow-up, and booking — all handled.",
   },
   {
     n: "3",
     title: "You step in to close",
-    body: "Walk into warm and hot appointments that are already booked.",
+    body: "Walk into warm, pre-qualified appointments that are already booked.",
   },
 ];
 

@@ -89,6 +89,9 @@ export function LeadForm() {
       noValidate
       className="rounded-2xl bg-white p-6 shadow-card sm:p-8"
     >
+      <p className="mb-5 font-heading text-lg font-semibold text-navy">
+        Apply to become a founding client
+      </p>
       <div className="grid gap-4 sm:grid-cols-2">
         {FIELD_META.map((f, i) => (
           <div
@@ -128,7 +131,7 @@ export function LeadForm() {
 
       <div className="mt-6">
         <CTAButton type="submit" className="w-full">
-          Apply for a spot
+          Become a Founding Client
         </CTAButton>
       </div>
       <p className="mt-3 text-center font-body text-xs text-ink-muted">

@@ -4,6 +4,15 @@ import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { CTAButton } from "./CTAButton";
 import { BayMoMockup } from "./BayMoMockup";
 
+const PILLS = [
+  "Professional Website",
+  "Facebook Ads Managed",
+  "AI Content Creation",
+  "24/7 AI Follow-up",
+  "Private CRM",
+  "AI Appointment Setting",
+];
+
 export function Hero() {
   const reduce = useReducedMotion();
 
@@ -30,33 +39,46 @@ export function Hero() {
             variants={item}
             className="inline-flex items-center gap-2 rounded-full border border-orange/30 bg-cream-100 px-3 py-1 font-heading text-xs font-medium text-orange-dark"
           >
-            Done-for-you marketing &amp; follow-up
+            Your done-for-you growth team · Philippines
           </motion.span>
 
           <motion.h1
             variants={item}
             className="mt-4 font-heading text-4xl font-extrabold leading-[1.1] tracking-tight text-navy sm:text-5xl"
           >
-            From ad to <span className="text-grad-orange">appointment</span>, BaMo
-            runs it for you.
+            Your <span className="text-grad-orange">AI Growth Team</span> for Real
+            Estate.
           </motion.h1>
 
           <motion.p
             variants={item}
             className="mt-5 max-w-xl font-body text-lg leading-relaxed text-ink-body"
           >
-            We create your content, post it, run your Facebook ads, and follow up
-            with every lead 24/7 — so you walk into warm appointments instead of
-            chasing cold leads.
+            We build your website, manage your marketing, respond to every lead
+            24/7, and book appointments — so you can focus on closing more sales.
           </motion.p>
+
+          <motion.ul
+            variants={item}
+            className="mt-6 grid max-w-xl grid-cols-1 gap-x-5 gap-y-2 sm:grid-cols-2"
+          >
+            {PILLS.map((pill) => (
+              <li key={pill} className="flex items-center gap-2">
+                <CheckIcon />
+                <span className="font-body text-sm font-medium text-ink">
+                  {pill}
+                </span>
+              </li>
+            ))}
+          </motion.ul>
 
           <motion.div
             variants={item}
             className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center"
           >
-            <CTAButton href="#apply">Reserve one of 5 spots</CTAButton>
-            <CTAButton href="#what-bamo-does" variant="ghost">
-              See what BaMo does ↓
+            <CTAButton href="#apply">Become a Founding Client</CTAButton>
+            <CTAButton href="#whats-included" variant="ghost">
+              See Everything Included ↓
             </CTAButton>
           </motion.div>
         </motion.div>
@@ -71,5 +93,21 @@ export function Hero() {
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange/15">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M5 13l4 4L19 7"
+          stroke="#E67E22"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </span>
   );
 }

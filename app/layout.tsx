@@ -17,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BaMo — From ad to appointment, handled for you",
+  title: "BaMo — Your AI Growth Team for Real Estate",
   description:
-    "BaMo creates your content, runs your Facebook ads, and follows up with every lead 24/7 — so real estate agents walk into warm appointments instead of chasing cold leads.",
+    "BaMo is a done-for-you AI growth team for Philippine real estate professionals — website, Facebook ads, AI content, 24/7 lead follow-up, private CRM, and appointment setting, all in one service.",
   openGraph: {
-    title: "BaMo — From ad to appointment, handled for you",
+    title: "BaMo — Your AI Growth Team for Real Estate",
     description:
-      "Done-for-you real estate marketing and lead follow-up. We run your funnel; you just close.",
+      "We build your website, manage your marketing, respond to every lead 24/7, and book appointments — so you can focus on closing more sales.",
     type: "website",
   },
 };
