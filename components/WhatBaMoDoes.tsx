@@ -27,6 +27,12 @@ type Card = {
 
 const CARDS: Card[] = [
   {
+    kicker: "Listed on BaMo",
+    title: "BaMo Marketplace Listing",
+    body: "Your properties live on bahaymo.com — a dedicated Philippine real estate marketplace where buyers are already searching.",
+    note: "Listing on BaMo Marketplace is included.",
+  },
+  {
     kicker: "Get found",
     title: "Professional Website",
     body: "Your own branded real estate site with property listings, inquiry forms, lead capture, and a custom domain.",
